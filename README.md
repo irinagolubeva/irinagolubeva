@@ -1,2 +1,2 @@
-# irinagolubeva
-Personal website
+# irinagolubeva.github.io
+Irina Golubeva personal website
