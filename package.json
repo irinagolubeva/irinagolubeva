@@ -11,10 +11,14 @@
   },
   "devDependencies": {
     "jade": "1.11.0",
-    "marked": "0.3.5"
+    "marked": "0.3.5",
+    "commander": "2.9.0",
+    "fs-extra": "0.26.2",
+    "glob": "5.0.15",
+    "underscore": "1.8.3"
   },
   "scripts": {
-    "build": "echo 123",
-    "publish": "echo 567"
+    "build": "./tools/build.js ./config.json",
+    "deploy": "./tools/deploy.sh"
   }
 }

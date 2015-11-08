@@ -1,0 +1,18 @@
+{
+  "output": "./build",
+  "templates": "./templates",
+  "chunks": "./chunks",
+  "pages": {
+    "index": {
+      "template": "index",
+      "chunks": {
+        "content": "index/content"
+      }
+    }
+  },
+  "copy": [
+    "./static/*",
+    "./assets",
+    "./README.md"
+  ]
+}
