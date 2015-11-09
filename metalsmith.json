@@ -1,0 +1,25 @@
+{
+  "source": "./contents",
+  "destination": "./build",
+  "metadata": {
+    "title": "Irina Golubeva personal website"
+  },
+  "plugins": {
+    "metalsmith-drafts": true,
+    "metalsmith-markdown": true,
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-layouts": {
+      "engine": "jade",
+      "directory": "./templates"
+    },
+    "metalsmith-in-place": {
+      "engine": "jade"
+    },
+    "metalsmith-assets": {
+      "source": "./public",
+      "destination": "."
+    }
+  }
+}
