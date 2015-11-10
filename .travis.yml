@@ -4,7 +4,7 @@ node_js:
   - "4.2.2"
 env:
   global:
-    - GH_REF="github.com:irinagolubeva/irinagolubeva.github.io.git"
+    - GH_REF="github.com/irinagolubeva/irinagolubeva.github.io.git"
     - secure: "U6/g7gknsPUP8kWjCzjWyjYI4U2TMbI/5AXtby78kS44gaimcemygK2wv41DhlM74lMxTsXG9gr6E8LsS5rajH+kHa4iRcQcOz5Ljf0Qz6gV6B7nHn83V1Uyp7fA3Jrzb6chZh0FQr5GX1ANBiTmS0t4K/uApQOsEJUYlM+SvCgIpKg5XMHFQ7aJbbhv/bOeAZZYOH9q0eZsBbbRqGjZClaNC/dcAsn32Zb044HrBIDcm0cZCzzsZByZMotUogTeTIcc5UX/xrOI9XYoRySRaTE1kCuu+Q03/eKosw2HUMkoyjm88tYgyPbzWsmzsVGi5lfTWWeylE5BjgAtLX4q1XoDJ63tSGrADIRrt8AwRoETQ1G9B34ivaDWKEg6Mm5gUFQ2m+P0JHAoPyVLqRT7iWNtLiSxO7TZZR/2wQESFHfW/vLHTz+BaUoHslufs7GwHUVYCM/K9OzxagzB2atTqdRr9AlLeFClih6TBUiCiv9SPH4YTvDBn+Lb2DK9mD6wMBWkGGqcEWyKB9xAD8aw8loVlvznt1GKYCfON2KISsgTPoNIAirz88tXz0CAmbicQ+dVmzCEVVii8Fji1rtr9/qQIZ3tUeOeej2hS5DwG50od37D1F7z6yjDYMlk5qTe6qj2n7IZYBFNwtcd/V5KZ+MCYLP+Jcb6xrhST7T0v4I="
 script:
   - ./node_modules/.bin/metalsmith
