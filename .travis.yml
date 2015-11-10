@@ -2,6 +2,4 @@ sudo: false
 language: node_js
 node_js:
   - "4.2.2"
-script:
-  - metalsmith
-  - gulp deploy
+script: ./node_modules/.bin/metalsmith && ./node_modules/.bin/gulp deploy
