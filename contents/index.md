@@ -2,4 +2,4 @@
 layout: index.jade
 title: Главная страница
 ---
-Контент
+Контент test
