@@ -10,6 +10,8 @@
     "url": "git@github.com:irinagolubeva/irinagolubeva.github.io.git"
   },
   "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-gh-pages": "0.5.4",
     "jade": "1.11.0",
     "metalsmith": "2.1.0",
     "metalsmith-assets": "0.1.0",
