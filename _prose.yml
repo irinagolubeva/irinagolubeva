@@ -20,7 +20,11 @@ prose:
         field:
           element: "text"
           label: "title"
-    contents/index:
+      - name: "collection"
+        field:
+          element: "text"
+          label: "collection"
+    contents/index.md:
       - name: "test"
         field:
           element: "text"
