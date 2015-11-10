@@ -1,6 +1,7 @@
 prose:
   rooturl: contents
   ignore:
+    - plugins
     - public/assets
     - public/README.md
     - templates
@@ -12,5 +13,15 @@ prose:
     - metalsmith.json
     - package.json
     - README.md
-  siteurl: http://irinagolubeva.github.io/
   media: public/media
+  metadata:
+    contents:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+    contents/index:
+      - name: "test"
+        field:
+          element: "text"
+          label: "test"

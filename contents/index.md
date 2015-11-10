@@ -1,5 +1,7 @@
 ---
-layout: index.jade
+layout: simple.jade
 title: Главная страница
+published: true
 ---
-Контент test 123
+
+Контент главной страницы

@@ -5,11 +5,13 @@
     "title": "Irina Golubeva personal website"
   },
   "plugins": {
-    "metalsmith-drafts": true,
-    "metalsmith-markdown": true,
-    "metalsmith-permalinks": {
-      "pattern": ":title"
+    "metalsmith-collections": {
+      "articles": {
+        "sortBy": "date",
+        "reverse": true
+      }
     },
+    "metalsmith-markdown": true,
     "metalsmith-layouts": {
       "engine": "jade",
       "directory": "./templates"
@@ -17,6 +19,7 @@
     "metalsmith-in-place": {
       "engine": "jade"
     },
+    "./plugins/published": true,
     "metalsmith-assets": {
       "source": "./public",
       "destination": "."

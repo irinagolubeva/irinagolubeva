@@ -1,0 +1,7 @@
+extends ./layout
+
+block content
+	if posts.length
+		each post in posts
+			h3 #{post.title}
+			| !{post.contents}
