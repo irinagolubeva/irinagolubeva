@@ -24,8 +24,13 @@ prose:
         field:
           element: "text"
           label: "collection"
-    contents/index.md:
-      - name: "test"
+          value: pages
+      - name: "layout"
         field:
-          element: "text"
-          label: "test"
+          element: "select"
+          label: "collection"
+          options:
+            - name: 'Simple'
+              value: 'simple.jade'
+            - name: 'Blog'
+              value: 'blog.jade'
