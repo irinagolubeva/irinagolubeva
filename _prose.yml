@@ -1,0 +1,16 @@
+prose:
+  rooturl: contents
+  ignore:
+    - public/assets
+    - public/README.md
+    - templates
+    - .gitignore
+    - .travis.yml
+    - _prose.yml
+    - gulpfile.js
+    - LICENSE
+    - metalsmith.json
+    - package.json
+    - README.md
+  siteurl: http://irinagolubeva.github.io/
+  media: public/media
