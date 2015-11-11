@@ -4,6 +4,5 @@ block content
 	if posts.length
 		each post in posts
 			h3
-				- console.log('>>>>', post.path)
-				a(href="#{post.path}") #{post.title}
+				a(href="/#{post.path}") #{post.title}
 			| !{post.contents}
