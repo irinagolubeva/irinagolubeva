@@ -9,6 +9,7 @@ block content
 		each post in posts
 			h3
 				a(href="/#{post.path}") #{post.title}
+
 			if post.less
 				div !{post.less}
 	else
