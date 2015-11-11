@@ -3,7 +3,8 @@
   "destination": "./build",
   "metadata": {
     "siteName": "Голубева Ирина Сергеевна",
-    "siteDescription": "учитель русского языка и литературы"
+    "siteDescription": "учитель русского языка и литературы",
+    "baseUrl": "http://irinagolubeva.github.io"
   },
   "plugins": {
     "./plugins/published": true,

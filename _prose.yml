@@ -42,6 +42,7 @@ prose:
           element: number
           label: order
           type: number
+          value: 0
 
       - name: paginate
         field:
@@ -56,11 +57,8 @@ prose:
 
       - name: layout
         field:
-          element: select
-          label: layout
-          options:
-            - name: Simple
-              value: simple.jade
+          element: hidden
+          value: simple.jade
 
       - name: collection
         field:
