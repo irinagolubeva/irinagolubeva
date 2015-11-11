@@ -1,9 +1,9 @@
 ---
-title: Post 1
+title: Post 3
 layout: simple.jade
 collection: blog
 published: true
 ---
 
 
-post 1
+post 3

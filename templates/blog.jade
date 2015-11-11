@@ -1,8 +1,18 @@
 extends ./layout
 
 block content
-	if posts.length
+	- var hasPagination = typeof pagination !== 'undefined';
+
+	if typeof blog !== 'undefined' && blog.length
+		- var posts = hasPagination ? blog.slice(pagination.start, pagination.end + 1) : blog;
+
 		each post in posts
 			h3
 				a(href="/#{post.path}") #{post.title}
-			| !{post.contents}
+			div !{post.snippet}
+	else
+		div Пока нет записей
+
+	if typeof pagination !== 'undefined'
+		include ./mixins/pagination
+		+pagination(pagination)

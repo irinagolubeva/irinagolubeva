@@ -2,18 +2,21 @@
   "source": "./contents",
   "destination": "./build",
   "metadata": {
-    "title": "Irina Golubeva personal website"
+    "siteName": "Голубева Ирина Сергеевна",
+    "siteDescription": "учитель русского языка и литературы"
   },
   "plugins": {
     "metalsmith-collections": {},
+    "metalsmith-paginate": {
+      "perPage": 2,
+      "path": ":collection/page"
+    },
     "metalsmith-markdown": true,
+    "metalsmith-snippet": true,
     "metalsmith-permalinks": true,
     "metalsmith-layouts": {
       "engine": "jade",
       "directory": "./templates"
-    },
-    "metalsmith-in-place": {
-      "engine": "jade"
     },
     "./plugins/published": true,
     "metalsmith-assets": {

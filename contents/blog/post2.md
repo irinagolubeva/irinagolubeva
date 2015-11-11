@@ -1,7 +1,7 @@
 ---
 title: Post 2
 layout: simple.jade
-collection: posts
+collection: blog
 published: true
 ---
 

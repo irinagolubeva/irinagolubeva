@@ -1,0 +1,9 @@
+mixin pagination(pagination)
+	nav.pagination
+		if pagination.prev
+			.pagination_prev
+				a(href="/#{pagination.prev.path}") &lt; Prev
+
+		if pagination.next
+			.pagination_next
+				a(href="/#{pagination.next.path}") Next &gt;
