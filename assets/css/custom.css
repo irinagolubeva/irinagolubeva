@@ -1,0 +1,13 @@
+.pagination {
+	overflow: hidden;
+}
+
+.pagination_prev {
+	float: left;
+	text-align: left;
+}
+
+.pagination_next {
+	float: right;
+	text-align: right;
+}
