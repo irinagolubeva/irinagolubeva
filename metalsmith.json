@@ -6,19 +6,31 @@
     "siteDescription": "учитель русского языка и литературы"
   },
   "plugins": {
-    "metalsmith-collections": {},
+    "./plugins/published": true,
+    "metalsmith-collections": {
+      "blog": {
+        "reverse": true
+      },
+      "nav": {
+        "sortBy": "order"
+      }
+    },
     "metalsmith-paginate": {
-      "perPage": 2,
+      "perPage": 10,
       "path": ":collection/page"
     },
     "metalsmith-markdown": true,
-    "metalsmith-snippet": true,
+    "metalsmith-in-place": {
+      "engine": "jade"
+    },
+    "metalsmith-more": {
+      "alwaysAddKey": true
+    },
     "metalsmith-permalinks": true,
     "metalsmith-layouts": {
       "engine": "jade",
       "directory": "./templates"
     },
-    "./plugins/published": true,
     "metalsmith-assets": {
       "source": "./public",
       "destination": "."

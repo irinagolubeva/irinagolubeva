@@ -1,8 +1,9 @@
 ---
 title: Главная страница
 layout: simple.jade
-collection: pages
+collection: nav
 published: true
+order: 1
 ---
 
 

@@ -16,21 +16,58 @@ prose:
   media: public/media
   metadata:
     contents:
-      - name: "title"
+      - name: title
         field:
-          element: "text"
-          label: "title"
-      - name: "layout"
+          element: text
+          label: title
+
+      - name: layout
         field:
-          element: "select"
-          label: "layout"
+          element: select
+          label: layout
           options:
-            - name: 'Simple'
-              value: 'simple.jade'
-            - name: 'Blog'
-              value: 'blog.jade'
-      - name: "collection"
+            - name: Simple
+              value: simple.jade
+            - name: Blog
+              value: blog.jade
+
+      - name: collection
         field:
-          element: "text"
-          label: "collection"
-          value: pages
+          element: text
+          label: collection
+          value: nav
+
+      - name: order
+        field:
+          element: number
+          label: order
+
+      - name: paginate
+        field:
+          element: text
+          label: paginate
+
+    contents/blog:
+      - name: title
+        field:
+          element: text
+          label: title
+
+      - name: layout
+        field:
+          element: select
+          label: layout
+          options:
+            - name: Simple
+              value: simple.jade
+
+      - name: collection
+        field:
+          element: hidden
+          value: blog
+
+      - name: date
+        field:
+          element: text
+          label: date
+          value: CURRENT_DATETIME

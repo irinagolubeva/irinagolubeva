@@ -24,14 +24,12 @@ html
 			h1
 				a(href="#")
 					strong #{siteName}
-				br
-				| #{siteDescription}
+				div #{siteDescription}
 
 		#main
-			if typeof pages !== 'undefined' && pages.length
-				div Test nav:
+			if typeof nav !== 'undefined' && nav.length
 				nav
-					each page in pages
+					each page in nav
 						a(href="/#{page.path}") #{page.title}
 						| 
 

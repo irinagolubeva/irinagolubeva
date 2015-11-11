@@ -6,7 +6,6 @@ published: true
 ---
 
 
-
 post 1
 
-![test kitty]({{site.baseurl}}/public/media/208234-1920x1080.jpg)
+![test kitty](/public/media/208234-1920x1080.jpg)
