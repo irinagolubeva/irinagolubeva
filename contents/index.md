@@ -1,6 +1,7 @@
 ---
-layout: simple.jade
 title: Главная страница
+layout: simple.jade
+collection: pages
 published: true
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Post 1
+layout: simple.jade
 collection: posts
-published: false
+published: true
 ---
 
 

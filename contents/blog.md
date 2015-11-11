@@ -1,5 +1,6 @@
 ---
-layout: blog.jade
 title: Блог
+layout: blog.jade
+collection: pages
 published: true
 ---
