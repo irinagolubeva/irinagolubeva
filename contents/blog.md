@@ -2,7 +2,7 @@
 title: Блог
 layout: blog.jade
 collection: nav
-published: true
+published: false
 order: 2
 paginate: blog
 ---

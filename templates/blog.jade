@@ -15,6 +15,6 @@ block content
 	else
 		div Пока нет записей
 
-	if typeof pagination !== 'undefined'
+	if hasPagination
 		include ./mixins/pagination
 		+pagination(pagination)

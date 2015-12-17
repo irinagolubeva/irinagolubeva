@@ -1,0 +1,11 @@
+mixin gallery(items)
+	.js-gallery
+		.row
+			each item, index in items
+				article.work-item(class="4u#{(index + 1) % 3 ? '' : '$'} 6u#{(index + 1) % 2 ? '' : '$'}(small) 12u$(xsmall)")
+					a.image.fit.thumb(href="#{item.image}")
+						img(src="#{item.image}", alt="")
+					if item.title
+						h3 #{item.title}
+					if item.contents.trim()
+						| !{item.contents}

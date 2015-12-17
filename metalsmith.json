@@ -14,6 +14,9 @@
       },
       "nav": {
         "sortBy": "order"
+      },
+      "portfolio": {
+        "sortBy": "order"
       }
     },
     "metalsmith-paginate": {

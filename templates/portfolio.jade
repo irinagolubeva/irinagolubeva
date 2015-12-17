@@ -1,0 +1,17 @@
+extends ./layout
+
+block content
+	- var hasPagination = typeof pagination !== 'undefined';
+
+	if typeof portfolio !== 'undefined' && portfolio.length
+		- var portfolioItems = hasPagination ? portfolio.slice(pagination.start, pagination.end + 1) : portfolio;
+
+		include ./mixins/gallery
+		+gallery(portfolioItems)
+
+	else
+		div Пока нет записей
+
+	if hasPagination
+		include ./mixins/pagination
+		+pagination(pagination)
